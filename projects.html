@@ -8,33 +8,31 @@
     <meta name="author" content="Your Name">
     <title>Frontend Developer Portfolio</title>
     
-    <!-- Link to Google Fonts for a more hand-written style -->
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 
     <style>
-        /* Basic Reset */
-        * {
+         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Body and Font Style */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             background-color: #f4f4f4;
             color: #333;
+            border: 4px solid black;  
+
         }
 
-        /* Header Styling */
         header {
             background-color: #fff;
             padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 2px solid #ddd;
+            
         }
 
         header h1 {
@@ -63,54 +61,81 @@
             color: #007bff;
         }
 
-        /* Main Section Styling */
         main {
-            display: flex;
-            justify-content: space-between;
-            margin: 50px;
+            text-align: center;
+            margin-top: 50px;
         }
 
-        /* Left Column Styling */
-        .left-column, .right-column {
-            width: 48%;
+        main h2 {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #333;
+            
+        }
+
+        main p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            background-color: #fff;
+        }
+
+        footer p {
+            font-size: 1em;
+            color: #333;
+        }
+        .left-column, .right-column, .middle-column {
+            width: 33.33%;
             padding: 20px;
             background-color: #fff;
             border: 2px solid #333;
-            border-radius: 10px;
+            height: 400px;
         }
+        .projects-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+        .projects-list li {
+    font-size: 1.2em;
+    padding: 10px 0;
+    border-bottom: 2px solid #333;  
+}
 
-        /* Section Titles */
-        h2 {
-            font-family: 'Patrick Hand', cursive;
-            font-size: 2.5em;
-            color: #333;
-            border-bottom: 2px solid #333;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-        }
+.projects-list li:last-child {
+    border-bottom: none;  
+}
 
-        /* List styling */
-        ul {
-            list-style-type: none;
-        }
+.projects-list li:hover {
+    background-color: #f4f4f4;  
+}
+.education {
+    width: 45%; 
+    margin-left: auto;
+    margin-right: 0;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    text-align: left; 
+}
 
-        ul li {
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
 
-        /* Links Styling */
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
+.education ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Reviews Section Styling */
-        .reviews {
+.education ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.reviews {
             display: flex;
             justify-content: space-between;
             margin-top: 30px;
@@ -134,33 +159,6 @@
             margin-top: 10px;
             font-weight: bold;
         }
-
-        /* Footer Styling */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #fff;
-            border-top: 2px solid #ddd;
-            margin-top: 50px;
-        }
-
-        footer p {
-            font-size: 1em;
-            color: #333;
-        }
-        .projects-list li {
-    font-size: 1.2em;
-    padding: 10px 0;
-    border-bottom: 2px solid #333;  /* Border between each item */
-}
-
-.projects-list li:last-child {
-    border-bottom: none;  /* Remove border from the last item */
-}
-
-.projects-list li:hover {
-    background-color: #f4f4f4;  /* Light background color when hovering */
-}
     </style>
 </head>
 <body>
@@ -177,8 +175,9 @@
     </header>
 </body><br/>
     <main>
+      <div class="med" style="display: flex; justify-content: space-between; align-items: flex-start;">
         <div class="left-column">
-            <h2>Projects</h2>
+            <h2 style="font-family: 'Patrick Hand', cursive;">Projects</h2>
             <ul class="projects-list">
                 <li>HTML Only Portfolio</li>
                 <li>Calculator</li>
@@ -187,8 +186,8 @@
                 <li>Product Upcoming Page</li>
             </ul>
         </div>
-
-        <div class="right-column">
+    
+        <div class="middle-column">
             <h2>Work Experience</h2>
             <ul>
                 <li>
@@ -202,8 +201,10 @@
                     <a href="#">Visit my GitHub Profile</a>
                 </li>
             </ul>
-
-            <h2>Education</h2>
+        </div>
+    
+        <div class="right-column">
+            <h2 style="font-family: 'Patrick Hand', cursive;">Education</h2>
             <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
             <h3>Courses I took:</h3>
             <ul>
@@ -218,27 +219,11 @@
                 <li>Discrete Mathematics</li>
             </ul>
         </div>
+    </div>
+        
     </main>
 
-    <section class="reviews">
-        <div class="review">
-            <p>John doe was a brilliant student; always stood out with his assignments.</p>
-            <div class="author">Jane Doe</div>
-            <div class="author">Assistant Professor</div>
-        </div>
 
-        <div class="review">
-            <p>John doe was a brilliant student; always stood out with his assignments.</p>
-            <div class="author">Jane Doe</div>
-            <div class="author">Assistant Professor</div>
-        </div>
-
-        <div class="review">
-            <p>John doe was a brilliant student; always stood out with his assignments.</p>
-            <div class="author">Jane Doe</div>
-            <div class="author">Assistant Professor</div>
-        </div>
-    </section>
 
     <footer>
         <p>&copy; all rights reserved 2025</p>

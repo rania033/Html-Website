@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frontend Developer portfolio and experience.">
+    <meta name="keywords" content="portfolio, frontend developer, projects, work experience, education, reviews">
+    <meta name="author" content="Your Name">
+    <title>Frontend Developer Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            border: 4px solid black;  
+
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        header h1 {
+            font-size: 2em;
+            font-family: 'Segoe UI', sans-serif;
+            color: #333;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 1.1em;
+        }
+
+        header nav ul li a:hover {
+            color: #007bff;
+        }
+
+        main {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        main h2 {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #333;
+            
+        }
+
+        main p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            background-color: #fff;
+        }
+
+        footer p {
+            font-size: 1em;
+            color: #333;
+        }
+        .left-column, .right-column, .middle-column {
+            width: 33.33%;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #333;
+            height: 400px;
+        }
+        .projects-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+        .projects-list li {
+    font-size: 1.2em;
+    padding: 10px 0;
+    border-bottom: 2px solid #333;  
+}
+
+.projects-list li:last-child {
+    border-bottom: none;  
+}
+
+.projects-list li:hover {
+    background-color: #f4f4f4;  
+}
+.education {
+    width: 45%; 
+    margin-left: auto;
+    margin-right: 0;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 10px;
+    text-align: left; 
+}
+
+
+.education ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.education ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.reviews {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .review {
+            width: 30%;
+            padding: 15px;
+            background-color: #fff;
+            border: 2px solid #333;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .review p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .review .author {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body><br/>
+    <main>
+      <div class="med" style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div class="left-column">
+            <h2 style="font-family: 'Patrick Hand', cursive;">Projects</h2>
+            <ul class="projects-list">
+                <li>HTML Only Portfolio</li>
+                <li>Calculator</li>
+                <li>Quiz App</li>
+                <li>Countdown Timer</li>
+                <li>Product Upcoming Page</li>
+            </ul>
+        </div>
+    
+        <div class="middle-column">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <strong>roadmap.sh</strong><br>
+                    Solved all the frontend projects<br>
+                    <a href="#">Visit my Profile</a>
+                </li>
+                <li>
+                    <strong>OpenSource Work</strong><br>
+                    Contributed to 50 open-source projects. Made my own projects with 200 GitHub Stars.<br>
+                    <a href="#">Visit my GitHub Profile</a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="right-column">
+            <h2 style="font-family: 'Patrick Hand', cursive;">Education</h2>
+            <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+            <h3>Courses I took:</h3>
+            <ul>
+                <li>Object Oriented Programming</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Web Engineering</li>
+                <li>Artificial Intelligence</li>
+                <li>Human Computer Interaction</li>
+                <li>Computer Graphics</li>
+                <li>Database Management Systems</li>
+                <li>Distributed Database Systems</li>
+                <li>Discrete Mathematics</li>
+            </ul>
+        </div>
+    </div>
+        
+    </main>
+
+
+
+    <footer>
+        <p>&copy; all rights reserved 2025</p>
+    </footer>
+</body>
+</html>
